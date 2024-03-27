@@ -1,0 +1,290 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #fff;
+}
+
+body {
+    background-image: url("./assets/ceu-estrelado.jpg");
+    background-size: cover; /* Para ocupar todo o fundo*/
+}
+
+a{
+    text-decoration: none;
+}
+
+header{ /* Posição em que a logo e os ícones irão ficar */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo { /*Posição em que a parte da logo irá ficar*/
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img{ /*Estilizar a imagem da logo*/
+    width: 40%;
+    height: auto;
+}
+
+.logo-text{ /*Estilizar a escrita ao lado da logo*/
+    font-family: "Star Wars", sans-serif;
+    font-size: 1rem;
+}
+
+.social-media{ /*Aonde vai ficar cada ícone*/
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i { /*Estilizar os ícones*/
+    font-size: 1.2rem;
+}
+
+i:hover{
+    color: gold;
+}
+
+.main-container{ /*Local aonde o título vai ficar*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+
+h2 { /* Estilização do título*/
+    font-family: "Star Wars", sans-serif;
+    margin-bottom: 20px;
+    color: gold;
+    font-weight: 300;
+}
+
+.main-content{ /*Configuração do bloco do card, aonde ficarão*/ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ao inves de espremer na margem, ele já joga a imagem para baixo*/
+    column-gap: 20px; /*Espaçamento vertical*/
+    row-gap: 10px; /*Espaço horizontal*/
+    padding: 0 20px;
+}
+
+.cards{ /*Estilização dos cards*/
+    width: 230px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end; /*Escrita no final do card*/
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.cards:hover{
+    transform: scale(1.02);
+}
+
+.character-name-bg{ /*Cor embaixo de cada nome do card*/
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.character-name{ /*Nome de cada personagem*/
+    font-family: "Star Wars", sans-serif;
+    color: gold;
+    font-size: 1rem;
+}
+
+.buttons{ /*Aonde ficarão e largura*/
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button { /*Estilização dos botoẽs*/
+    width: 70px;
+    height: 25px;
+    background-color: gold;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #000;
+    color: gold;
+}
+
+#back-button {
+    visibility: hidden;
+}
+
+footer{ /*Aonde o footer ficará*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 40px 0 20px 0;
+}
+
+.footer-logo { /*Estilização da escrita "Star Wars Characters"*/
+    font-family: "Star Wars", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.copyrigth{ /*Estilização da escrita "Desenvolvido por Diogo Filipe Kempczinski"*/
+    font-weight: 500;
+}
+
+.modal{ /*Aonde vai ficar o quadrado das informações*/
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+}
+
+.modal-content{ /*Estilizando o quadrado e como as escritas ficarão*/
+    width: 25vw;
+    height: 70vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.character-image{ /*Edição da imagem que fica dentro do modal de informações*/
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.character-details{ /*Edição do texto das informações dos personagens*/
+    font-family: "Star Wars", sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: gold;
+}
+
+@media(max-width: 768px) {
+
+    header{ /* Posição em que a logo e os ícones irão ficar */
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .logo { /*Posição em que a parte da logo irá ficar*/
+        width: 215px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-img{ /*Estilizar a imagem da logo*/
+        width: 35%;
+        height: auto;
+    }
+
+    .logo-text{ /*Estilizar a escrita ao lado da logo*/
+        font-family: "Star Wars", sans-serif;
+        font-size: 13px;
+    }
+
+    .social-media{ /*Aonde vai ficar cada ícone*/
+        width: 110px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 7px;
+    }
+
+    i { /*Estilizar os ícones*/
+        font-size: 1.1rem;
+    }
+
+    .main-container{ /*Local aonde o título vai ficar*/
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0 0 0px;
+    }
+
+    h2 { /* Estilização do título*/
+        font-family: "Star Wars", sans-serif;
+        margin-bottom: 20px;
+        color: gold;
+        font-weight: 50px;
+        text-align: center;
+    }
+    .footer-logo { /*Estilização da escrita "Star Wars Characters"*/
+        font-family: "Star Wars", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .modal-content{ /*Estilizando o quadrado e como as escritas ficarão*/
+        width: 85vw;
+        height: 60vh;
+        background-color: #0d0d0d;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        padding: 30px 10px;
+        align-items: center;
+    }
+
+    .character-image{ /*Edição da imagem que fica dentro do modal de informações*/
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-position: 50% 10%;
+        background-size: cover;
+    }
+    
+
+
+
+}

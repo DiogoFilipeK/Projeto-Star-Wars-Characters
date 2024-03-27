@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Character | Diogo Filipe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/pngegg.png" type="image/x-icon"> <!--Para por imagem no icone de guia-->
+</head>
+<body>
+    <header>
+
+        <a href="./index.html"> <!--Tag ancora, para clicar na logo e ser direcionado para página inicial-->
+            <div class="logo"> <!--Div para a logo da esquerda-->
+                <img src="./assets/Star_Wars_Logo..png" alt="logo" class="logo-img"/>
+                <span class="logo-text">Characters</span>
+            </div>
+        </a>
+
+        
+        <div class="social-media"> <!--Icones de rede social-->
+
+            <a href="https://www.instagram.com/diogo_dfk/?igsh=MWFoYzBoaHNjYzlxOA%3D%3D" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/DiogoFilipeKempczinski/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://github.com/DiogoFilipeK" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/diogo-filipe-kempczinski-dfk/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>     
+        </div>
+
+    </header>
+
+    <div class="main-container"> <!--Titulo-->
+        <h2>Conheca todos os personagens de Star Wars em um so lugar</h2>
+
+        <div class="main-content" id="main-content" > <!--Aonde ficara os Cards do projeto--></div>  
+
+        <div class="modal" id="modal" onclick="hideModal()"> <!--Modal é o quadrado das informações de cada personagem-->
+            <div class="modal-content" id="modal-content"> <!--As informações e o design-->
+
+
+            </div>    
+        </div>
+
+
+        <div class="buttons"> <!--Criação dos botões para passar a página ou voltar-->
+            <button id="back-button" disabled>Anterior</button>
+            <button id="next-button" disabled>Próxima</button> 
+            <!--Disable significa desabilitado, iremos mudar isso no JavaScript-->
+        </div>
+
+    </div>
+
+    <footer> <!--Rodapé da página-->
+        <p class="footer-logo">Star Wars Characters</p>
+        <p class="copyrigth">Desenvolvido por &copy; Diogo Filipe Kempczinski</p>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/601702cc71.js" crossorigin="anonymous"></script> <!--Icones de rede social-->
+    <script src="./script.js"></script> <!--Para linkar um arquivo JS-->
+</body>
+</html>
